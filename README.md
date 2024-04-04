@@ -26,7 +26,9 @@ Grupă: 332CB
      
       - "lock_task_queue" and "task_queue" are used to synchronize the threads during the addition and extraction of tasks from the queue.
      
-      - The "lock_running_tasks" and "running_tasks" Lock and Set of task IDs are used to track the state of the threads that are currently running. When a task is completed and its result is saved in a file, its ID is removed from the structure. This necessity arose when one thread writes the result file and the main thread tries to read from that file simultaneously.
+      - "lock_running_tasks" and "running_tasks" Lock and Set of task IDs are used to track the state of the threads that are currently running. When a task is completed and its result is saved in a file, its ID is removed from the structure. This necessity arose when one thread writes the result file and the main thread tries to read from that file simultaneously.
+    
+- tasks.py: In this file, I have implemented a Task class. This is a class that abstracts the dependencies and execution of each task individually. Child classes will specify the specific data required and the corresponding implementation.
      
 Resurse utilizate
 -
