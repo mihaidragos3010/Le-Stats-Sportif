@@ -26,7 +26,7 @@ Grupă: 332CB
      
       - "lock_task_queue" and "task_queue" are used to synchronize the threads during the addition and extraction of tasks from the queue.
      
-      - The "lock_running_tasks" and "running_tasks" Lock and set of task IDs are used to track the state of the threads that are currently running. When a task is completed and its result is saved in a file, its ID is removed from the structure. This necessity arose when one thread writes the result file and the main thread tries to read from that file simultaneously.
+      - The "lock_running_tasks" and "running_tasks" Lock and Set of task IDs are used to track the state of the threads that are currently running. When a task is completed and its result is saved in a file, its ID is removed from the structure. This necessity arose when one thread writes the result file and the main thread tries to read from that file simultaneously.
      
 Resurse utilizate
 -
