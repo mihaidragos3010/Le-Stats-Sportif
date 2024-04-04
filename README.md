@@ -35,6 +35,7 @@ Grupă: 332CB
 # Tests
 
 In this assignment, I received a checker from the university which I used. Additionally, I implemented three tests to cover all functionalities. The first test sends a GET request to shut down the server and sends a new request for "states_mean" to verify if an error message is received. The next two tests verify that the output from the "num_jobs" and "jobs" functions is consistent with the format required by the assignment.
+During the testing process, I also used some scripts to send POST messages to the server at a specific URL.
 
 # How to run
 
