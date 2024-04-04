@@ -31,20 +31,4 @@ Grupă: 332CB
     
 - tasks.py: In this file, I have implemented a Task class. This is a class that abstracts the dependencies and execution of each task individually. Child classes will specify the specific data required and the corresponding implementation.
      
-Resurse utilizate
--
 
-* Resurse utilizate - toate resursele publice de pe internet/cărți/code snippets, chiar dacă sunt laboratoare de ASC
-
-Git
--
-1. Link către repo-ul de git
-
-Ce să **NU**
--
-* Detalii de implementare despre fiecare funcție/fișier în parte
-* Fraze lungi care să ocolească subiectul în cauză
-* Răspunsuri și idei neargumentate
-* Comentarii (din cod) și *TODO*-uri
-
-Acest model de README a fost adaptat după [exemplul de README de la SO](https://github.com/systems-cs-pub-ro/so/blob/master/assignments/README.example.md).
