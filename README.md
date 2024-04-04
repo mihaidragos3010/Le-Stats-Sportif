@@ -31,21 +31,25 @@ Grupă: 332CB
     
 - tasks.py: In this file, I have implemented a Task class. This is a class that abstracts the dependencies and execution of each task individually. Child classes will specify the specific data required and the corresponding implementation.
 
+# Tests
+
+In this assignment, I received a checker from the university which I used. Additionally, I implemented three tests to cover all functionalities. The first test sends a GET request to shut down the server and sends a new request for "states_mean" to verify if an error message is received. The next two tests verify that the output from the "num_jobs" and "jobs" functions is consistent with the format required by the assignment.
+
 # How to run
 
 To prepare the environment, run the following commands:
 
-      user$ make create_venv
-      user$ source venv/bin/activate
-      user$ make install
+      make create_venv
+      source venv/bin/activate
+      make install
       
 To activate the server, run the command below and open the provided link in your browser:
 
-      user$ make run_server
+      make run_server
 
 To run the tests, execute one of the two commands:
 
-      user$ make run_tests
-      user$ make run_my_tests
+      make run_tests
+      make run_my_tests
      
 
