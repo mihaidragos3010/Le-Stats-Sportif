@@ -1,4 +1,5 @@
-Nume: MIhai Dragos-Andrei
+Nume: Mihai Dragos-Andrei
+
 Grupă: 332CB
 
 # Homework 1 ASC
