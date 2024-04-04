@@ -20,7 +20,7 @@ Grupă: 332CB
 
    - task_runner.py: Within this file, I have implemented two classes: ThreadPool and TaskRunner. ThreadPool is responsible for starting threads, stopping threads, adding tasks to the queue, and providing responses for the completion of each task. TaskRunner is responsible for processing the data and saving the results in specific files. The synchronization part is implemented through:
      
-      - "isTimeToStop" event informs the threads if there is a task in the queue. When the queue is empty, this event is set to false, and all threads will wait until a new task arrives.
+      - "isWorkingTime" event informs the threads if there is a task in the queue. When the queue is empty, this event is set to false, and all threads will wait until a new task arrives.
      
       - "isTimeToStop" event informs the threads to execute all existing tasks in the queue and then shut down permanently.
      
