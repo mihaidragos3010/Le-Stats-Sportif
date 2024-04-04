@@ -3,7 +3,7 @@ Grupă: 332CB
 
 # Homework 1 ASC
 --
-   In implementing this college project, I had to implement a Thread pool within a backend server. When the server starts, threads are activated based on the machine on which the program is running. Using the Flask library, it listens for requests to interact with the server via REST API. A request is analyzed and, if it involves processing calculations, it will be added to the thread pool. Here, each thread is started and will process all tasks in the queue. After the server has been shut down, it will return an error message for future task requests.
+      In implementing this college project, I had to implement a Thread pool within a backend server. When the server starts, threads are activated based on the machine on which the program is running. Using the Flask library, it listens for requests to interact with the server via REST API. A request is analyzed and, if it involves processing calculations, it will be added to the thread pool. Here, each thread is started and will process all tasks in the queue. After the server has been shut down, it will return an error message for future task requests.
 
 
 # Implementation
