@@ -19,9 +19,13 @@ Grupă: 332CB
    - routes.py: Within this file, I have implemented the part responsible for listening to requests through a REST API.
 
    - task_runner.py: Within this file, I have implemented two classes: ThreadPool and TaskRunner. ThreadPool is responsible for starting threads, stopping threads, adding tasks to the queue, and providing responses for the completion of each task. TaskRunner is responsible for processing the data and saving the results in specific files. The synchronization part is implemented through:
-           * "isTimeToStop" event informs the threads if there is a task in the queue. When the queue is empty, this event is set to false, and all threads will wait until a new task arrives.
+     
+           - "isTimeToStop" event informs the threads if there is a task in the queue. When the queue is empty, this event is set to false, and all threads will wait until a new task arrives.
+     
            - "isTimeToStop" event informs the threads to execute all existing tasks in the queue and then shut down permanently.
+     
            - "lock_task_queue" and "task_queue" are used to synchronize the threads during the addition and extraction of tasks from the queue.
+     
            - The "lock_running_tasks" and "running_tasks" Lock and set of task IDs are used to track the state of the threads that are currently running. When a task is completed and its result is saved in a file, its ID is removed from the structure. This necessity arose when one thread writes the result file and the main thread tries to read from that file simultaneously.
      
 Resurse utilizate
