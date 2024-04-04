@@ -15,13 +15,13 @@ Grupă: 332CB
 
     ex:  [{"YearStart": 2017, "YearEnd": 2017, "LocationAbbr": "OH", "LocationDesc": "Ohio", ...}, ....]
 
-   - loggin.py: Within this file, I have implemented a class that abstracts the implementation of a logger responsible for saving the program's purge history in a series of files within the "logger" directory named "webserver.log.{index}". This logger displays the time based on the global time zone. It checks if the file exists, creates it if it doesn't, and deletes all existing files from a previous session.
+  - loggin.py: Within this file, I have implemented a class that abstracts the implementation of a logger responsible for saving the program's purge history in a series of files within the "logger" directory named "webserver.log.{index}". This logger displays the time based on the global time zone. It checks if the file exists, creates it if it doesn't, and deletes all existing files from a previous session.
      
-   ex: 2024-04-04 11:22:48 - website logger - INFO - A request has been posted to /api/mean_by_category
+    ex: 2024-04-04 11:22:48 - website logger - INFO - A request has been posted to /api/mean_by_category
 
-   - routes.py: Within this file, I have implemented the part responsible for listening to requests through a REST API.
+  - routes.py: Within this file, I have implemented the part responsible for listening to requests through a REST API.
 
-   - task_runner.py: Within this file, I have implemented two classes: ThreadPool and TaskRunner. ThreadPool is responsible for starting threads, stopping threads, adding tasks to the queue, and providing responses for the completion of each task. TaskRunner is responsible for processing the data and saving the results in specific files. The synchronization part is implemented through:
+  - task_runner.py: Within this file, I have implemented two classes: ThreadPool and TaskRunner. ThreadPool is responsible for starting threads, stopping threads, adding tasks to the queue, and providing responses for the completion of each task. TaskRunner is responsible for processing the data and saving the results in specific files. The synchronization part is implemented through:
      
       - "isWorkingTime" event informs the threads if there is a task in the queue. When the queue is empty, this event is set to false, and all threads will wait until a new task arrives.
      
@@ -31,7 +31,7 @@ Grupă: 332CB
      
       - "lock_running_tasks" and "running_tasks" Lock and Set of task IDs are used to track the state of the threads that are currently running. When a task is completed and its result is saved in a file, its ID is removed from the structure. This necessity arose when one thread writes the result file and the main thread tries to read from that file simultaneously.
     
-- tasks.py: In this file, I have implemented a Task class. This is a class that abstracts the dependencies and execution of each task individually. Child classes will specify the specific data required and the corresponding implementation.
+  - tasks.py: In this file, I have implemented a Task class. This is a class that abstracts the dependencies and execution of each task individually. Child classes will specify the specific data required and the corresponding implementation.
 
 # Tests
 
